@@ -133,12 +133,16 @@ body {
     }
     
     .whatsapp-link img {
+        bottom: 1rem;
+        right: 1rem;
         position: fixed;
         height: 4rem;
         z-index: 3;
     }
     
     .whatsapp-link a {
+        bottom: 1rem;
+        right: 1rem;
         z-index: 4;
         display: flex;
         position: fixed;
