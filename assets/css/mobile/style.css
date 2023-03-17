@@ -133,7 +133,6 @@ body {
     }
     
     .whatsapp-link img {
-        
         position: fixed;
         height: 4rem;
         z-index: 3;
@@ -177,7 +176,7 @@ body {
         display: flex;
         width: 100%;
         position: absolute;
-        margin-top: -38%;
+        margin-top: -30%;
     }
 
     .service-section {
