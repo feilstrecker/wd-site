@@ -133,7 +133,7 @@ body {
     }
     
     .whatsapp-link img {
-        display: flex;
+        
         position: fixed;
         height: 4rem;
         z-index: 3;
@@ -473,7 +473,6 @@ body {
     }
     
     .whatsapp-link img {
-        display: flex;
         position: fixed;
         height: 4rem;
         z-index: 3;
@@ -816,7 +815,6 @@ body {
     }
     
     .whatsapp-link img {
-        display: flex;
         position: fixed;
         height: 5rem;
         z-index: 3;
@@ -1159,7 +1157,6 @@ body {
     }
     
     .whatsapp-link img {
-        display: flex;
         position: fixed;
         height: 6rem;
         z-index: 3;
