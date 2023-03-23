@@ -131,6 +131,7 @@ footer p, p a {
         text-decoration: none;
         margin-top: 3rem;
         margin-left: 2rem;
+        width: 4rem;
         color: white;
         transition: ease-in;
         transition-duration: 1s;

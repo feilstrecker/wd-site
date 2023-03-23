@@ -26,10 +26,11 @@ class buttonMenu {
             bar1.style.top = "1rem";
             bar3.style.top = "1rem";
             bar1.style.right = "52%";
+            bar2.style.right = "52%";
             bar3.style.right = "52%";
             bar3.style.rotate = "45deg";
             bar1.style.rotate = "-45deg";
-            bar2.style.display = "none";
+            bar2.style.width = "0px";
         }
         else {
             menu.style.width = "0";
@@ -37,10 +38,11 @@ class buttonMenu {
             bar1.style.top = "0.4rem";
             bar3.style.top = "1.6rem";
             bar1.style.right = "0.5rem";
+            bar2.style.right = "0.5rem";
             bar3.style.right = "0.5rem";
             bar3.style.rotate = "0deg";
             bar1.style.rotate = "0deg";
-            bar2.style.display = "flex";
+            bar2.style.width = "30px";
     
         }
     
