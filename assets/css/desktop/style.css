@@ -37,10 +37,10 @@ body {
     100% {box-shadow: none; rotate: 0deg; width: 500px; height: 500px;} 
 }
 
-@keyframes aboutShadowAnim {
+@keyframes shadowAnim {
     0% {box-shadow: none;}
-    50% {box-shadow: 0rem 0.1rem 1.5rem -0.5rem var(--primary-color);}
-    100% {box-shadow: none;}
+    100% {box-shadow: 0rem 0.1rem 1.5rem -0.5rem #00ff00;}
+    
     
 }
 
@@ -90,6 +90,10 @@ body {
         box-shadow: 0 0rem 0.7rem 0.5rem var(--secondary-color);
         justify-content: space-between;
         z-index: 3;
+    }
+
+    .mobile-navbar {
+        display: none;
     }
     
     .nav-button-container {
@@ -264,9 +268,10 @@ body {
     }
 
     .service-list td img:hover {
-        animation-name: aboutShadowAnim;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+        animation-name: shadowAnim;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        box-shadow: 0rem 0.1rem 1.5rem -0.5rem #00ff00;
     } 
     
     .about-section {
@@ -280,8 +285,7 @@ body {
         background-size: cover;
         color: var(--primary-color);
     }
-    
-    
+       
     .about-content-container {
         margin: 0 auto;
         margin-top: 4rem;
@@ -293,9 +297,7 @@ body {
         border-radius: 0.5rem;
         padding: 1rem;
         padding-bottom: 3rem;
-        animation-name: aboutShadowAnim;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+        box-shadow: 0rem 0.1rem 1.7rem -1rem var(--primary-color);
     }
     
     .about-text {
@@ -364,6 +366,8 @@ body {
         height: 500px;
         width: 500px;
         border-radius: 1rem;
+        transition: ease-in-out;
+        transition-duration: 1s;
       }
 
       .column img:hover {
@@ -371,7 +375,7 @@ body {
         height: 600px;
         width: 600px;
         animation-name: rowAnim;
-        animation-duration: 1.5s;
+        animation-duration: 0.5s;
         animation-iteration-count: 1;
         box-shadow: 0rem 0.1rem 1.5rem 0rem #000000;
         transition: all
@@ -382,7 +386,7 @@ body {
         flex-direction: column;
         height: 35%;
         width: 100%;
-        padding-bottom: 3%;
+        padding-bottom: 6%;
         color: var(--secondary-color);
     }
 
@@ -392,16 +396,16 @@ body {
         margin-top: 3rem;
         text-align: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row-reverse;
         align-items: center;
         border-radius: 0.5rem;
-        box-shadow: 0rem 0rem 2rem -1.3rem #00ff00;
-        width: 50vw;
+        box-shadow: 0rem 0rem 2rem -1.3rem var(--secondary-color);
+        width: 73%;
         height: 60vh;
     }
     
     .contact-text p {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
         font-family: 'Open Sans', sans-serif;

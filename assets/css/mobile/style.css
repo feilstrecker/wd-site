@@ -18,9 +18,31 @@ body {
     height: 100%;
 }
 
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer p, p a {
+    font-weight: lighter;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @keyframes arrow-anim {
     0% {margin: 0 60vw;}
     100% {margin: 0 20vw;}
+    
+}
+
+@keyframes nav-content-anim {
+    0% {width: 0; height: 100vh;}
+    100% {width: 50%;}
     
 }
 
@@ -73,54 +95,88 @@ body {
     }
     
     .navbar {
-        background-color: var(--secondary-color);
-        position: fixed;
-        max-width: 100%;
-        height: 3rem;
-        display: flex;
-        box-shadow: 0 0rem 0.7rem 0.5rem var(--secondary-color);
-        z-index: 3;
+        display: none;
     }
-    
-    .nav-button-container {
-        font-family: 'Open Sans', sans-serif;
-        display: flex;
-        margin: 0 1rem;
-        width: 85rem;
-        height: 3rem;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .nav-button-container a {
-        text-decoration: none;
-        background: none;
-        border: none;
-        text-transform: uppercase;
-        color: var(--primary-color);
-    
-    }
-    
-    .nav-button-container a:hover {
-        transition: all 1s ease-in-out;
-        color: white;
-        font-size: 1rem;
-    }
-    
-    
-    .nav-logo-container {
-        display: flex;
-        width: 15%;
-        height: 3rem;
-    }
-    
-    
+
     .logo {
         display: flex;
         width: 5rem;
         height: 5rem;
         margin: -25% -20%;
         object-fit: cover;
+    }
+
+    .nav-content {
+        animation-name: nav-content-anim;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        z-index: 5;
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        width: 50%;
+        right: 0;
+        height: 101vh;
+        background: linear-gradient(0deg, var(--secondary-color) 25%, var(--primary-color) 100%);
+        list-style-type: none;
+        transition: ease-in;
+        transition-duration: 0.8s;
+    }
+
+    .nav-content li a {
+        justify-content: left;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        text-decoration: none;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        color: white;
+        transition: ease-in;
+        transition-duration: 1s;
+        
+    }
+
+    .menu-button {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        z-index: 15;
+        right: 0.5rem;
+        top: 0.3rem;
+    }
+    
+    .menu-button .bar1 {
+        position: fixed;
+        background-color: var(--primary-color);
+        width: 30px;
+        height: 5px;
+        right: 0.5rem;
+        top: 0.4rem;
+        transition: ease-in-out;
+        transition-duration: 1s;
+    }
+
+    .menu-button .bar2 {
+        position: fixed;
+        background-color: var(--primary-color);
+        width: 30px;
+        height: 5px;
+        right: 0.5rem;
+        top: 1rem;
+        transition: ease-in-out;
+        transition-duration: 1s;
+    }
+
+    .menu-button .bar3 {
+        position: fixed;
+        background-color: var(--primary-color);
+        width: 30px;
+        height: 5px;
+        right: 0.5rem;
+        top: 1.6rem;
+        transition: ease-in-out;
+        transition-duration: 1s;
     }
     
     .intro-section {
@@ -185,7 +241,7 @@ body {
 
     .banner-video {
         display: flex;
-        margin-top: 6rem;
+        margin-top: 5rem;
         width: 100%; /* width of container */
         height: 18vh; /* height of container */
         object-fit: cover;
@@ -229,7 +285,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: row;
-        column-gap: 15%;
+        column-gap: 5%;
         align-items: center;
     }
     
@@ -476,7 +532,6 @@ body {
         width: 15%;
         height: 3rem;
     }
-    
     
     .logo {
         display: flex;
