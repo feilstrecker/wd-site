@@ -293,7 +293,6 @@ body {
         display: flex;
         flex-direction: column;
         text-align: left;
-        background-image: url("assets/img/background_about_section.png");
         border-radius: 0.5rem;
         padding: 1rem;
         padding-bottom: 3rem;
