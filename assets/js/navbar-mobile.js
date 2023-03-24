@@ -31,6 +31,7 @@ class buttonMenu {
             bar3.style.rotate = "45deg";
             bar1.style.rotate = "-45deg";
             bar2.style.width = "0px";
+            bar2.style.border = "none";
         }
         else {
             menu.style.width = "0";
@@ -42,7 +43,9 @@ class buttonMenu {
             bar3.style.right = "0.5rem";
             bar3.style.rotate = "0deg";
             bar1.style.rotate = "0deg";
-            bar2.style.width = "30px";
+            bar2.style.width = "30px"
+            bar2.style.border = "1px solid var(--secondary-color)"
+
     
         }
     

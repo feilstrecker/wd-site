@@ -156,6 +156,7 @@ footer p, p a {
         top: 0.4rem;
         transition: ease-in-out;
         transition-duration: 1s;
+        border: 1px solid var(--secondary-color);
     }
 
     .menu-button .bar2 {
@@ -167,6 +168,7 @@ footer p, p a {
         top: 1rem;
         transition: ease-in-out;
         transition-duration: 1s;
+        border: 1px solid var(--secondary-color);
     }
 
     .menu-button .bar3 {
@@ -178,6 +180,7 @@ footer p, p a {
         top: 1.6rem;
         transition: ease-in-out;
         transition-duration: 1s;
+        border: 1px solid var(--secondary-color);
     }
     
     .intro-section {
