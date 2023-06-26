@@ -1,176 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <title>WD Jardins e Piscinas</title>
-
-    <link rel="stylesheet" href="assets/css/mobile/style.css">
-    <link rel="stylesheet" href="assets/css/desktop/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-logo-container">
-            <img class="logo" src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/WD-removebg-preview.png?raw=true" alt="LOGO">
-        </div>
-        <div class="nav-button-container">
-            <a href="#home">Inicio</a>
-            <a href="#service">Serviços</a>
-            <a href="#about">Sobre</a>
-            <a href="#contact">Contato</a>
-        </div>
-    </nav>
-    <nav class="mobile-navbar">
-        <div class="menu-button">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <aside class="menu-mobile">
-            <ul class="nav-content">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#service">Serviços</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </aside>
-    </nav>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/img/Logo_01.(100).png" alt="company logo" class="banner" />
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#about-section">Sobre</a></li>
+          <li><a href="#portfolio-section">Portfólio</a></li>
+          <li><a href="#contact-section">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="whatsapp-container">
-        <div class="whatsapp-link">
-            <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/whats.png?raw=true" alt="">
-            <a href="http://wa.link/oa0max"></a>
-        </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=5551995017737&text=Ol%C3%A1,%20tenho%20interesse%20no%20seu%20servi%C3%A7o.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento."
+        class="botao-entre-em-contato"
+      >
+        Entre em Contato <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
-    <section id="home" class="intro-section">
-        <div class="banner-video-container">
-            <video class="banner-video" autoplay loop muted src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/video/banner-bg-video.mp4?raw=true"></video>
-            <div class="home-title-container">
-                <img class="banner-title" src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/banner.png?raw=true" alt="banner">
+    <section class="initial">
+      <div class="initial-text">
+        <h2 class="time">Hora de repaginar seu</h2>
+        <h1 class="yard">Quintal</h1>
+        <h4 class="text">
+          Seu sonho de ter um jardim exuberante e uma piscina impecável começa aqui. Descubra os nossos serviços de
+          paisagismo e manutenção de piscinas.
+        </h4>
+      </div>
+      <div>
+        <label for="" class="line">
+          <span class="line-white"></span>
+        </label>
+      </div>
+      <div class="social-midia">
+        <a
+          href="https://api.whatsapp.com/send?phone=5551995017737&text=Olá%2C%20vim%20através%20do%20seu%20site.%20Gostaria%20de%20fazer%20um%20orçamento."
+          ><img
+            src="https://raw.githubusercontent.com/leosintaxe/footer/main/whatsapp.png"
+            alt="WhatsApp logo"
+            class="facebook-img"
+        /></a>
+        <a href="https://www.instagram.com/wdjardinsepiscinas/">
+          <img
+            src="https://raw.githubusercontent.com/leosintaxe/footer/main/instagram.png"
+            alt="instagram logo"
+            class="insta-img"
+        /></a>
+      </div>
+    </section>
+    <section class="offer-background">
+      <div class="title-offer-1">
+        <h2 class="services-title">nossos serviços</h2>
+      </div>
+      <div class="row">
+        <div class="offer-box">
+          <div class="offer-box-in">
+            <div class="offer-in">
+              <span class="span-img">
+                <img src="/img/montagem.e.manutenção.de.jardins.png" alt="spatula" class="assembly" />
+              </span>
+              <h2 class="title-offer">Montagem e manutenção de jardins</h2>
+              <h4 class="subtitle-offer">
+                Jardins de acordo com o gosto de nossos clientes, com nossa expertize e experiência.
+              </h4>
             </div>
+          </div>
         </div>
-    </section>
-    <section id="service" class="service-section dark-background">
-        <div class="service-title-container">
-            <h1 class="title">Serviços</h1>
-        </div>
-        <div class="service-content-container">
-            <table class="service-table-content">
-                <tr class="service-list">
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/s2.png?raw=true" alt="Ícone limpeza de piscinas"></td>
-                    <td class="anim-text-1"></td>
-                </tr>
-                <tr class="service-list">
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/s3.png?raw=true" alt="Ícone limpeza de jardins"></td>
-                    <td class="anim-text-2"></td>
-                </tr>
-                <tr class="service-list">
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/s5.png?raw=true" alt="Ícone manutenção em instalações de piscina"></td>
-                    <td class="anim-text-3"></td>
-                </tr>
-                <tr class="service-list">
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/s4.png?raw=true" alt="Ícone de irrigação"></td>
-                    <td class="anim-text-4"></td>
-                </tr>
-                <tr class="service-list">
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/s1.png?raw=true" alt="Ícone pá de jardim"></td>
-                    <td class="anim-text-5"></td>
-                </tr>
-            </table>
-        </div>
-
-    </section>
-    <section id="gallery" class="gallery-section green-background">
-        <div class="gallery-title-container title">
-            <h1 class="gallery-title">Galeria</h1>
-        </div>
-        <div class="row">
-            <div class="column">
-              <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/antes1.png?raw=true" alt="Foto mostrando serviço da empresa">
-              <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/depois1.png?raw=true" alt="Foto mostrando serviço da empresa">
-              <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/antes2.png?raw=true" alt="Foto mostrando serviço da empresa">
-              <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/depois2.png?raw=true" alt="Foto mostrando serviço da empresa">
+        <div class="offer-box">
+          <div class="offer-box-in">
+            <div class="offer-in">
+              <span class="span-img">
+                <img src="/img/manutenção.e.instalação.de.piscinas.png" alt="maintenance ket" class="assembly" />
+              </span>
+              <h2 class="title-offer">manutenção de piscinas</h2>
+              <h4 class="subtitle-offer">
+                Oferecemos um serviço abrangente na área de piscinas, proporcionando uma ótima experiência aos nossos clientes.
+              </h4>
             </div>
-            <div class="column">
-                <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim1.png?raw=true" alt="Foto mostrando serviço da empresa">
-                <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim2.png?raw=true" alt="Foto mostrando serviço da empresa">
-                <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim3.png?raw=true" alt="Foto mostrando serviço da empresa">
-                <img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim4.png?raw=true" alt="Foto mostrando serviço da empresa">
-              </div>
+          </div>
         </div>
-        <div class="gallery-content-container">
-            <table class="gallery-table">
-                <tr class="gallery-list">
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/antes1.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/depois1.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/antes2.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/depois2.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim1.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim2.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                    <td><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/jardim3.png?raw=true" alt="Foto mostrando serviço da empresa"></td>
-                </tr>
-            </table>
-        </div>
-        <div class="arrow-warn" style="display: flex; flex-direction: column; text-align: center;">
-            <img class="gallery-arrow-image" src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/arrow.png?raw=true" alt="Flecha mostrando para qual lado arrastar para ver as fotos.">
-            <p class="gallery-arrow-warn">Arraste para o lado para ver alguns de nossos serviços.</p>
-        </div>
-        <span id="about"></span>
-    </section>
-    <section class="about-section dark-background">
-        <div class="about-title-container title">
-            <h1 class="about-title">Sobre</h1>
-        </div>
-        <div class="about-content-container">
-            <p class="about-text">
-                A empresa WD Jardins e Piscinas é especializada em serviços de jardinagem e limpeza de piscinas.
-                Com grande experiência na área, a WD Jardins e Piscinas se destaca pela qualidade dos serviços oferecidos e pelo atendimento personalizado a cada cliente.
-            </p>
-            <p class="about-text">
-                Além da manutenção de jardins e piscinas oferece serviço de reparo nas instalações de piscinas.
-                Na área de limpeza de piscinas, a WD Jardins e Piscinas oferece serviços de limpeza e manutenção.
-            </p>
-            <p class="about-text">
-                A WD Jardins e Piscinas tem como missão oferecer serviços de alta qualidade, que atendam às necessidades e expectativas dos clientes.
-            </p>
-        </div>
-        <div class="about-img"><img src="https://github.com/feilstrecker/wd-site.io/blob/main/assets/img/about-img.png?raw=true" alt="Ícone de jardinagem"></div>
-    </section>
-    <section id="contact" class="contact-section green-background">
-        <div class="title">
-            <h1>Contato</h1>
-        </div>
-        <div class="contact-container">
-            <div class="contact-text">
-                <p>A WD Jardins e Piscinas oferece serviços especializados em jardinagem e limpeza de piscinas.</p>
-                <p class="green-text">Entre em contato agora mesmo e faça uma experiência conosco.</p>
+        <div class="offer-box">
+          <div class="offer-box-in">
+            <div class="offer-in">
+              <span class="span-img">
+                <img src="/img/limpeza de jardins.png" alt="pushcart" class="assembly" />
+              </span>
+              <h2 class="title-offer">Irrigação e poda de árvores</h2>
+              <h4 class="subtitle-offer">Linha ampla em irrigação e técnicas avançadas em poda e cortes de árvores.</h4>
             </div>
-            <table class="contact-table">
-                <tr class="contact-list">
-                    <td><h2>Telefone</h2></td>
-                    <td class="contact-info-td">(51 99501-7737)</td>
-                </tr>
-                <tr class="contact-list">
-                    <td><h2>Email</h2></td>
-                    <td class="contact-info-td">Willianfeilstrecker2000@hotmail.com</td>
-                </tr>
-                <tr class="contact-list">
-                    <td><h2>Localização</h2></td>
-                    <td class="contact-info-td">Rua dos lírios, Av. Noiva do Mar, 204, Xangri-lá - RS, 95588-000</td>
-                </tr>
-            </table>
-    
+          </div>
         </div>
+      </div>
     </section>
-
+    <section class="who-we-are" id="about-section">
+      <div class="who-title-div">
+        <h2 class="who-title">quem somos nós</h2>
+      </div>
+      <div class="who-content">
+        <p class="who-text">
+          A empresa WD Jardins e Piscinas é especializada em serviços de jardinagem e limpeza de piscinas. Com grande
+          experiência na área, a WD Jardins e Piscinas se destaca pela qualidade dos serviços oferecidos e pelo
+          atendimento personalizado a cada cliente.
+        </p>
+        <p class="who-text">
+          Além da manutenção de jardins e piscinas oferece serviço de reparo nas instalações de piscinas. Na área de
+          limpeza de piscinas, a WD Jardins e Piscinas oferece serviços de limpeza e manutenção.
+        </p>
+        <p class="who-text">
+          A WD Jardins e Piscinas tem como missão oferecer serviços de alta qualidade, que atendam às necessidades e
+          expectativas dos clientes.
+        </p>
+      </div>
+    </section>
+    <section class="slider-background" id="portfolio-section">
+      <div class="title-services">
+        <h2 class="services-title">galeria</h2>
+      </div>
+      <div class="slide">
+        <img src="/img/slider-1.jpeg" alt="Jardim" class="slide-image" />
+        <button class="prev-btn" onclick="previousSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slide">
+        <img src="/img/slider-4.png" alt="Piscina" class="slide-image" />
+        <button class="prev-btn" onclick="previousSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slide">
+        <img src="/img/slider-3.jpeg" alt="Jardim 2" class="slide-image" />
+        <button class="prev-btn" onclick="previousSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slide">
+        <img src="/img/slider-2.jpeg" alt="Piscina" class="slide-image" />
+        <button class="prev-btn" onclick="previousSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slide">
+        <img src="/img/slider-4.png" alt="Piscina" class="slide-image" />
+        <button class="prev-btn" onclick="previousSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div style="height: 100%;" class="slide">
+        <img  style="height: 100%;" src="/img/WhatsApp Image 2023-06-04 at 21.00.29_cleanup.jpeg" alt="Piscina" class="slide-image" />
+        <button class="prev-btn" onclick="previousSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <section class="contact" id="contact-section">
+      <div class="logo">
+        <img src="/img/Logo_01.(100).png" alt="company logo" />
+      </div>
+      <div class="contacts-div">
+        <ul>
+          <li class="li-contact">
+            <img src="/img/pngwing.com.(7).png" alt="" class="icon-li" />
+            <h4 class="text-contact">email:</h4>
+            <p class="subtext-contact">wdjardinsepiscinas@gmail.com</p>
+          </li>
+          <li class="li-contact">
+            <img src="/img/pngwing.com.(8).png" alt="" class="icon-li" />
+            <h4 class="text-contact">telefone:</h4>
+            <p class="subtext-contact">(51) 99501-7737</p>
+          </li>
+          <li class="li-contact">
+            <img src="/img/pngwing.com.(9).png" alt="" class="icon-li" />
+            <h4 class="text-contact">endereço:</h4>
+            <p class="subtext-contact">
+              Rua dos lírios, Av. Noiva do Mar, 204 <br />
+              - Xangri-lá, RS
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="social-midia-2">
+        <a
+          href="https://api.whatsapp.com/send?phone=5551995017737&text=Olá%2C%20vim%20através%20do%20seu%20Instagram.%20Gostaria%20de%20fazer%20um%20orçamento."
+        >
+          <img
+            src="https://raw.githubusercontent.com/leosintaxe/footer/main/whatsapp.png"
+            alt=""
+            class="whatsApp image"
+        /></a>
+        <a href="https://www.instagram.com/wdjardinsepiscinas/"
+          ><img
+            src="https://raw.githubusercontent.com/leosintaxe/footer/main/instagram.png"
+            alt=""
+            class="instagram image"
+          />
+        </a>
+      </div>
+    </section>
     <footer>
-        <p>Desenvolvido por <a href="https://www.instagram.com/faixle/">Leonardo Feilstrecker</a></p>
+      <div class="footer-logo-container">
+        <img src="https://raw.githubusercontent.com/leosintaxe/footer/main/logo1.png" alt="logo image" />
+      </div>
+      <div class="footer-social-container">
+        <div class="footer-social">
+          <a href="https://www.instagram.com/leosintaxe/"
+            ><img src="https://raw.githubusercontent.com/leosintaxe/footer/main/instagram.png" alt="Instagram icon" />
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://tiktok.com/@leosintaxe"
+            ><img src="https://raw.githubusercontent.com/leosintaxe/footer/main/tiktok.png" alt="TikTok icon"
+          /></a>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://api.whatsapp.com/send?phone=5551998415733&text=Ol%C3%A1,%20tenho%20interesse%20no%20seu%20servi%C3%A7o.%20Gostaria%20de%20fazer%20um%20or%C3%A7amento."
+            ><img src="https://raw.githubusercontent.com/leosintaxe/footer/main/whatsapp.png" alt="WhatsApp icon"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-slogan-container">
+        <p>Copyright © 2023 | Desenvolvido por <a href="https://www.instagram.com/leosintaxe/">Leosintaxe</a></p>
+      </div>
     </footer>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/navbar-mobile.js"></script>
-</body>
+    <script src="/js/slider.js"></script>
+    <script src="/js/nav.js"></script>
+  </body>
 </html>
