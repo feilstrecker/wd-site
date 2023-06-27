@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +31,8 @@ header {
 #menu a {
   display: block;
   padding: 0.5rem;
+  text-decoration: none;
+  color: #fff;
 }
 .banner {
   width: 3rem;
@@ -69,6 +75,7 @@ header {
 .yard {
   font-size: 32px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .text {
   padding: 1rem 4rem 0 0;
@@ -138,7 +145,7 @@ header {
 }
 footer {
   background-color: #282d32;
-  padding-bottom: 2rem;
+  padding-bottom: 3.5rem;
 }
 .footer-logo-container img {
   width: 5rem;
@@ -277,6 +284,7 @@ footer {
   font-size: 10px;
   padding-top: 1rem;
   color: white;
+  font-weight: 300;
 }
 .assembly {
   transition: all 0.3s ease-out 0s;
@@ -305,7 +313,7 @@ footer {
 .prev-btn,
 .next-btn {
   position: absolute;
-  margin-top: 25%;
+  margin-top: 30%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;
@@ -380,6 +388,7 @@ footer {
   width: 20px;
   height: 20px;
   margin: 0 0.5rem;
+  padding: 0 1rem;
   cursor: pointer;
 }
 .text-contact {
@@ -406,7 +415,7 @@ footer {
   background-color: #555555;
 }
 .who-we-are {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem 4rem 4rem 4rem;
   background: #3b5249;
   text-align: center;
 }
@@ -447,12 +456,16 @@ footer {
 .botao-entre-em-contato i {
   margin-left: 5px;
 }
-a {
+.social-midia-2 a {
+  display: inline-block;
+  padding: 10px 20px;
   color: #fff;
   text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
-a:hover {
-  background: rgba(0, 0, 0, 0.3);
+.social-midia-2 a:hover {
+  background-color: #555555;
 }
 #btn-mobile {
   color: #fff;
@@ -527,6 +540,7 @@ a:hover {
   .slide-image {
     width: 80%;
     height: auto;
+    max-width: 80%;
   }
   .initial-text {
     margin-top: 1rem;
@@ -544,6 +558,9 @@ a:hover {
   }
   .initial-text {
     margin-top: 1.8rem;
+  }
+  .subtitle-offer {
+    font-size: 12px;
   }
 }
 @media (min-width: 396px) {
@@ -569,6 +586,9 @@ a:hover {
   }
 }
 @media (min-width: 478px) {
+  .subtitle-offer {
+    font-size: 13px;
+  }
   .img-background {
     width: 25rem;
   }
@@ -603,7 +623,7 @@ a:hover {
   }
   .prev-btn,
   .next-btn {
-    margin-top: 20%;
+    margin-top: 25%;
   }
   .prev-btn {
     left: 25px;
@@ -615,7 +635,7 @@ a:hover {
     max-height: 330px;
   }
   .slider-background {
-    height: 24rem;
+    height: 28rem;
   }
 }
 @media (max-width: 600px) {
@@ -689,12 +709,17 @@ a:hover {
     margin: 1rem auto;
   }
   .who-title,
-  .services-title,
   .row {
     padding: 1rem;
   }
+  .services-title {
+    padding: 2rem 0;
+  }
 }
 @media (min-width: 600px) {
+  .subtitle-offer {
+    font-size: 14px;
+  }
   .botao-entre-em-contato {
     bottom: 2.5rem;
     right: 2.5rem;
@@ -712,9 +737,11 @@ a:hover {
     letter-spacing: 1px;
   }
   .services-title {
-    padding: 4rem 0 1rem;
+    padding: 2rem 0 3rem;
   }
-  .who-title,
+  .who-title {
+    padding: 0 0 1rem 0;
+  }
   .row {
     padding: 2rem 0 0 0;
   }
@@ -745,17 +772,24 @@ a:hover {
   }
 }
 @media (min-width: 837px) {
+  .offer-background {
+    padding: 4rem 0;
+  }
+  .time {
+    font-size: 3rem;
+  }
+  .yard {
+    font-size: 5rem;
+  }
   .text {
     padding-top: 3rem;
+    font-size: 15px;
   }
   .initial {
     height: 40rem;
   }
   .who-we-are {
-    padding: 5rem;
-  }
-  .slider-background {
-    height: 35rem;
+    padding: 3rem;
   }
   header {
     height: 4rem;
@@ -786,7 +820,7 @@ a:hover {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    height: 40rem;
+    height: 33rem;
   }
   .prev-btn,
   .next-btn {
@@ -805,6 +839,9 @@ a:hover {
   }
 }
 @media (min-width: 1030px) {
+  .slider-background {
+    height: 42rem;
+  }
   .title-offer-1 {
     margin-top: 4rem;
   }
@@ -837,6 +874,9 @@ a:hover {
   }
 }
 @media (min-width: 1400px) {
+  .who-we-are {
+    padding: 3rem 6rem;
+  }
   .slider-background {
     height: 58rem;
   }
